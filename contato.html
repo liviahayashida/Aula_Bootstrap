@@ -66,13 +66,33 @@
             <div class="col-md-4 col-sm-12">
                 <div class="form-floating">
                     <select name="categoria" id="categoria" class="form-select" required>
-                        <option value="" selected disabled>Fabricado em:</option>
-                        <option value="sp">São Paulo</option>
-                        <option value="rj">Rio de Janeiro</option>
-                        <option  value="mg">Minas Gerais</option>
+                        <option value="" selected disabled>Categoria</option>
+                        <option value="lancamentos">Lançamentos</option>
+                        <option value="promocao">Promoção</option>
+                        <option value="vendidos">Mais Vendidos</option>
+                        <option value="destaques">Destaques</option>
+                        <option value="prevenda">Pré-Venda</option>
                     </select>
                 </div>
             </div>
+
+            <div class="col-md-4 col-sm-12">
+                <label class="form-label d-block">Fabricado em </label>
+                <!-- sp -->
+                <div class="form-check form-check-inline">
+                    <input type="radio" name="tipo" id="sp" class="form-check-input">
+                    <label for="sp" class="form-check-label">São Paulo</label>
+                </div>
+                <!-- rj -->
+                 <div class="form-check form-check-inline">
+                    <input type="radio" name="tipo" id="rj" class="form-check-input">
+                    <label for="rj" class="form-check-label">Rio de Janeiro</label>
+                </div>
+                <!-- mg-->
+                 <div class="form-check form-check-inline">
+                    <input type="radio" name="tipo" id="mg" class="form-check-input">
+                    <label for="mg" class="form-check-label">Minas Gerais</label>
+                </div>
 
             <div class="col-12">
                 <button type="submit" class="btn btn-success">Enviar</button>
